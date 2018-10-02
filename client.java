@@ -12,6 +12,7 @@ public class client
 			double ct,pt;
 			Socket s=new Socket("localhost",6666);  
 			DataOutputStream dout=new DataOutputStream(s.getOutputStream());  
+			DataInputStream din=new DataInputStream(s.getInputStream());  
 			
 			System.out.print("Enter the plain text number: ");
 			int msg=sc.nextInt();
